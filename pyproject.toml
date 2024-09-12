@@ -10,6 +10,8 @@ readme = "README.md"
 python = "^3.9"
 
 [tool.poetry.group.docs.dependencies]
+langchain-openai = "^0.1.23"
+langchain-anthropic = "^0.1.23"
 langgraph = { path = "libs/langgraph/", develop = true }
 langgraph-checkpoint = { path = "libs/checkpoint/", develop = true }
 langgraph-checkpoint-sqlite = { path = "libs/checkpoint-sqlite", develop = true }
@@ -26,6 +28,7 @@ mkdocs-git-committers-plugin-2 = "^2.3.0"
 mkdocs-material = {extras = ["imaging"], version = "^9.5.27"}
 markdown-include = "^0.8.1"
 markdown-callouts = "^0.4.0"
+mkdocs-exclude = "^1.0.2"
 
 [build-system]
 requires = ["poetry-core"]
