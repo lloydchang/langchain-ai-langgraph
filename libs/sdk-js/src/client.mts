@@ -241,6 +241,7 @@ export class AssistantsClient extends BaseClient {
     metadata?: Metadata;
     assistantId?: string;
     ifExists?: OnConflictBehavior;
+    assistantName?: string;
   }): Promise<Assistant> {
     return this.fetch<Assistant>("/assistants", {
       method: "POST",
@@ -250,6 +251,7 @@ export class AssistantsClient extends BaseClient {
         metadata: payload.metadata,
         assistant_id: payload.assistantId,
         if_exists: payload.ifExists,
+        assistant_name: payload.assistantName
       },
     });
   }
